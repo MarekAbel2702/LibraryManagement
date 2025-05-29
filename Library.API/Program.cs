@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllers();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -12,7 +13,6 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddInfrastructure(builder.Configuration);
 
-builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
@@ -34,6 +34,12 @@ app.UseRouting();
 
 app.UseAuthorization();
 app.MapControllers();
-app.MapRazorPages();
+
+app.MapGet("/", context =>
+{
+    context.Response.Redirect("/swagger");
+    return Task.CompletedTask;
+});
+
 
 app.Run();
