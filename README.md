@@ -1,5 +1,7 @@
 Library Management API
+
 Opis (PL)
+
 Projekt REST API stworzony w oparciu o Onion Architecture, zrealizowany w ASP.NET Core. System zarządza zasobami biblioteki (książki, autorzy, gatunki), oferując pełną funkcjonalność CRUD.
 
 Zastosowane technologie i podejścia:
@@ -14,6 +16,7 @@ Zastosowane technologie i podejścia:
 Projekt służy jako solidna baza do dalszego rozwoju aplikacji biznesowych z czystą architekturą. Gotowy do prezentacji i rozwinięcia o testy, autoryzację lub front-end.
 
 Description (EN)
+
 A RESTful API project built with ASP.NET Core using Onion Architecture. The system manages library resources (books, authors, genres) and provides full CRUD functionality.
 
 Technologies and approaches used:
